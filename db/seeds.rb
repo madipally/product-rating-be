@@ -1,0 +1,5 @@
+Product.create(name: 'Product 1', price: '100', description: 'This is the first product')
+Product.create(name: 'Product 2', price: '200', description: 'This is the second product')
+Product.create(name: 'Product 3', price: '150', description: 'This is the third product')
+Product.create(name: 'Product 4', price: '250', description: 'This is the fourth product')
+Product.create(name: 'Product 5', price: '200', description: 'This is the fifth product')
