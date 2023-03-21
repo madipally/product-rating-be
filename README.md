@@ -6,11 +6,10 @@ Please follow below steps in order to configure.
 
 1. clone this repository
 
-2. run the migration using below command
+2. run the migration using command
     rake db:migrate
 
-2. run the seed file using below command in order to have default products
-    rake db:seed
+2. run the seed file using command rake db:seed in order to have default products
 
-3. run the server using below command
-    rails s
+3. run the server using rails s command
+    
