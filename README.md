@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is backend application for getting the products and rating a product.
 
-Things you may want to cover:
+Please follow below steps in order to configure.
 
-* Ruby version
+1. clone this repository
 
-* System dependencies
+2. run the migration using below command
+    rake db:migrate
 
-* Configuration
+2. run the seed file using below command in order to have default products
+    rake db:seed
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. run the server using below command
+    rails s
