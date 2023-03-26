@@ -6,8 +6,10 @@ class Api::V1::RatingsController < ApplicationController
 
     def create
       @rating = Rating.new(rating_params)
+
       if @rating.save
-        render json: @rating, status: :created
+        # render json: { success: @rating }, status: :created 
+        render :json => { :success => "success", :status_code => "200" }
       else
         render json: { errors: @rating.errors.full_messages }, status: :unprocessable_entity
       end
@@ -16,7 +18,7 @@ class Api::V1::RatingsController < ApplicationController
     private
 
     def rating_params
-      params.require(:rating).permit(:stars, :product_id)
+      params.require(:rating).permit(:product_id, :name, :stars, :comments)
     end
      
 end
